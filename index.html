@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        text-align: center;
+      }
+      .active {
+        background-color: #0f172a;
+      }
+      .kotak {
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+        margin: 10px auto;
+      }
+      .merah {
+        background-color: red;
+      }
+      .hijau {
+        background-color: green;
+      }
+      .biru {
+        background-color: blue;
+      }
+      .bungkus {
+        width: 100%;
+        height: 100px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>bermain dengan warna</h1>
+    <button id="ubah-warna">ubah warna</button>
+    <br /><br />
+    <div id="redBox" class="kotak merah">
+      <p id="isiRedBox"></p>
+    </div>
+    <input type="range" name="red" min="0" max="255" />
+    <br />
+    <div class="kotak hijau">
+      <p id="isiGreenBox"></p>
+    </div>
+    <input type="range" name="green" min="0" max="255" />
+    <br />
+    <div class="kotak biru">
+      <p id="isiBlueBox"></p>
+    </div>
+    <input type="range" name="blue" min="0" max="255" />
+    <br /><br />
+    <div class="bungkus"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
